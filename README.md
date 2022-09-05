@@ -1,0 +1,1 @@
+Solutions to https://github.com/GolangUA/workshops/tree/master/concurrency
