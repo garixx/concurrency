@@ -45,7 +45,7 @@ func cleaner(sm *SessionManager, deadline time.Duration) {
 		sm.mu.Lock()
 		for k, v := range sm.sessions {
 			fmt.Print(".") // work in progress indicator
-			if duration := current.Sub(v.UpdatedAt); duration > 5*time.Second {
+			if duration := current.Sub(v.UpdatedAt); duration > deadline {
 				delete(sm.sessions, k)
 			}
 		}
