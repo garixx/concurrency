@@ -32,7 +32,7 @@ func NewSessionManager() *SessionManager {
 // TODO implement cleaner job function
 // you may use tickers from time package to execute job every second\2nd second etc.
 
-// CreateSession creates a new session and returns the sessionID
+// CreateSession creates a  new session  and returns the sessionID
 func (m *SessionManager) CreateSession() (string, error) {
 	sessionID, err := MakeSessionID()
 	if err != nil {
