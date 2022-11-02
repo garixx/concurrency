@@ -11,7 +11,7 @@ You don't need to modify mockstream.go file. Your task is to modify code in main
 The producer reads in tweets from a mockstream and a consumer is processing the data to find out whether someone has tweeted about golang or not. The task is to modify the code inside `main.go` so that producer and consumer can run concurrently to increase the throughput of this program.
 
 ## Expected results:
-Before: 
+Before:
 ```
 davecheney      tweets about golang
 beertocode      does not tweet about golang
